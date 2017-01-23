@@ -1,0 +1,14 @@
+<h2 class="ft-hdr">Your Booking Details</h2>
+<div class="row">
+  <div class="col-xs-12 ft-booking-details">
+      <div><span class="ft-label">Booking code</span>: <span id="booking-code" *ngIf="booking">{{booking.bookingCode}}</span></div>
+      <div><span class="ft-label">Passenger Name</span>: <span id="pass-name" *ngIf="booking">{{booking.firstName}} {{booking.lastName}}</span></div>
+      <div><span class="ft-label">Origin</span>: <span id="origin" *ngIf="booking">{{booking.origin.name}} ({{booking.origin.code}})</span></div>
+      <div><span class="ft-label">Destination</span>: <span id="destination" *ngIf="booking">{{booking.destination.name}} ({{booking.destination.code}})</span></div>
+      <div><span class="ft-label">Flight</span>:<span id="flight-number" *ngIf="booking">{{booking.flightNumber}}</span></div>
+      <div class="form-group text-center">
+        <button class="btn btn-danger " type="submit" *ngIf="!checkedIn" (click)="checkin()">Proceed to Check-in</button>
+      </div>
+      <div class="ft-checkin-success" *ngIf="checkedIn">Check-in Successful!</div>
+  </div>
+</div>

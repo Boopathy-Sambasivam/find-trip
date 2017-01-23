@@ -1,0 +1,71 @@
+/* You can add global styles to this file, and also import other style files */
+
+@font-face {
+  font-family: excellenceInMotionBold;
+  src: url(ExcellenceInMotion_Bold.woff);
+}
+@font-face {
+  font-family: excellenceInMotionMedium;
+  src: url(ExcellenceInMotion_Medium.woff);
+}
+@font-face {
+  font-family: excellenceInMotionRegular;
+  src: url(ExcellenceInMotion_Regular.woff);
+}
+@font-face {
+  font-family: excellenceInMotionThin;
+  src: url(ExcellenceInMotion_Thin_V4_h.woff);
+}
+
+body {
+  font-family: excellenceInMotionRegular;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+h1.ft-hdr {
+  font-family:excellenceInMotionRegular;
+  font-size:16px;
+  font-weight:normal;
+  background: url(af_pattern_bg.png) top left repeat;
+  text-align:center;
+  padding:20px;
+  margin:0;
+  color:white;
+  text-transform: uppercase;
+}
+
+h2.ft-hdr {
+  font-family:excellenceInMotionBold;
+  font-size:30px;
+  text-align:center;
+  margin:10px 0;
+  color:#003145;
+  text-transform: uppercase;
+}
+h2.ft-hdr:after {
+  content: '\2014';
+  color:#003145;
+  font-size:30px;
+  display: block;
+  text-align: center;
+}
+.ft-content-wrapper {
+  width: 300px;
+  margin:60px auto 0;
+  border:1px solid #003145;
+  padding:25px;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .ft-content-wrapper {
+    width: 100%;
+    border:0 none;
+    margin: 0 auto;
+    padding:20px;
+  }
+
+}
+
+/*# sourceMappingURL=styles.bundle.map*/

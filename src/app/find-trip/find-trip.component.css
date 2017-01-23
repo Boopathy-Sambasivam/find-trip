@@ -1,0 +1,21 @@
+label {
+  font-family:excellenceInMotionMedium;
+}
+.help-block.error, .help-inline.error {
+  color:#d40504
+}
+input.ng-invalid:not(.ng-pristine) {
+  border:1px solid #d40504;
+}
+.btn.btn-danger {
+  background-color: #d40504;
+  border-color: #ce1e19;
+}
+.btn.btn-danger:hover {
+  background-color: #e20f09;
+  border-color: #ce1e19;
+}
+
+input, button {
+  outline:none;border-radius:0;
+}

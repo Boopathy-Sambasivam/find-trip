@@ -1,0 +1,12 @@
+.ft-booking-details > div {
+  margin:10px 0;
+}
+.ft-label {
+  font-family: excellenceInMotionMedium;
+}
+.ft-checkin-success {
+  font-size: 16px;
+  font-family: excellenceInMotionMedium;
+  color: #258a25;
+  text-align: center;
+}

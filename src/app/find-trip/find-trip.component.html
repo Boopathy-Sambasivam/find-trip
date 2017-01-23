@@ -1,0 +1,24 @@
+<h2 class="ft-hdr">Retrieve Your Booking</h2>
+<p>You can find your booking by filling out your family name and the booking code in your booking confirmation.</p>
+<div class="row">
+  <div class="col-xs-12">
+    <form [formGroup]="findTripForm" (ngSubmit)="retriveCheckin()">
+      <div class="form-group">
+        <label for="bookingCode">Booking code</label>
+        <input id="bookingCode" class="form-control" type="text" formControlName="bookingCode">
+        <span class="help-block error" *ngIf="findTripForm.get('bookingCode').hasError('required') && findTripForm.get('bookingCode').touched">This field is required!</span>
+        <span class="help-block error" *ngIf="findTripForm.get('bookingCode').hasError('pattern') && findTripForm.get('bookingCode').dirty">Please provide valid input!</span>
+      </div>
+      <div class="form-group">
+        <label for="familyName">Family name</label>
+        <input id="familyName" class="form-control" type="text" formControlName="familyName">
+        <span class="help-block error" *ngIf="findTripForm.get('familyName').hasError('required') && findTripForm.get('familyName').touched">This field is required! </span>
+        <span class="help-block error" *ngIf="findTripForm.get('familyName').hasError('pattern') && findTripForm.get('familyName').dirty">Please provide valid input!</span>
+      </div>
+      <div class="form-group text-center">
+        <button class="btn btn-danger " type="submit" [disabled]="!findTripForm.valid">Retrieve booking</button>
+      </div>
+    </form>
+  </div>
+</div>
+
